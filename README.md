@@ -11,21 +11,17 @@ Fase 2: Expansión
 
 - Sistema de login y credenciales.
 - Dashboard de estadísticas (más y menos vendidos).
-- Descuentos por tiempo limitado. 
-
+- Descuentos por tiempo limitado.
 
 sistema-inventario-ventas/
-│
-├── index.html          (Pantalla del Punto de Venta)
-├── inventario.html     (Pantalla de la tabla de stock)
-├── README.md           (objetivo del MVP)
-│
+
+├── index.html
+├── inventario.html
+├── README.md
 ├── css/
-│   └── style.css       (colores, márgenes y diseño)
-│
+│   └── style.css
 ├── js/
-│   └── app.js          (Por ahora vacío, aquí irá la lógica del frontend después)
-│
+│   └── app.js
 └── assets/
-    ├── icons/          (iconos del menú y el carrito)
-    └── img/            (imágenes de prueba de los productos)
+    ├── icons/
+    └── img/
