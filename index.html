@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +10,75 @@
 </head>
 
 <body>
-    <header>
+    <aside>
         <img src="assets/img/icons/logo.png" alt="logo-OmniStock">
         <h1><b>OmniStock</b></h1><br>
 
         <hr>
         <ul>
+            <p>Modulos Clave</p>
             <li><a href="index.html">Punto de Venta</a><br></li>
             <li><a href="inventario.html">Inventario & Stock</a><br></li>
+            <li><a href="ventas.html">Ventas & Analitica</a></li>
+            <li><a href="compras.html">Compras & Envio</a>s</li>
         </ul>
+    </aside>
+
+    <header>
+        <input type="text" placeholder="Buscar producto, SKU, código de barras">
+
     </header>
 
     <main>
         <section>
-
-            <article>
-                <h2>Todos</h2>
-            </article>
-
-            <article>
-                <h2>Bebidas</h2>
-            </article>
-
-            <article>
-                <h2>Snacks & Abarrotes</h2>
-            </article>
-
-            <article>
-                <h2>Lacteos & Frescos</h2>
-            </article>
-
-            <article>
-                <h2>Limpieza</h2>
-            </article>
-
-            <article>
-                <h2>Tecnologia</h2>
-            </article>
-
+            <ul>
+                <li><button>Todos los Productos</button></li>
+                <li><button>Bebidas</button></li>
+                <li><button>Snacks & Abarrotes</button></li>
+                <li><button>Lacteos & Frescos</button></li>
+                <li><button>Limpieza</button></li>
+                <li><button>Teconologia</button></li>
+            </ul>
         </section>
+
+        <section>
+            <div>
+                <img src="assets/img/kombucha.jpg" alt="Kombucha">
+                <p>SKU-7721</p>
+                <h3>Kombucha Botanica</h3>
+
+                <div>
+                    <p>Precio Venta</p>
+                    <p>$54.00</p>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/img/almendras.jpg" alt="Almendras">
+                <p>SKU-8910</p>
+                <h3>Almendras Tostadas Saladas</h3>
+
+                <div>
+                    <p>Precio Venta</p>
+                    <p>$78.50</p>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/img/terraOlearia.jpg" alt="Aceite de Oliva">
+                <p>SKU-2041</p>
+                <h3>Aceite de Oliva</h3>
+
+                <div>
+                    <P>Precio Venta</P>
+                    <p>$185.00</p>
+                    <button>+</button>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
