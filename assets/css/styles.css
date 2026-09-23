@@ -1,5 +1,20 @@
+:root {
+    /*Colores de prueba, si se necesita cambiar desde aca podriamos hacerlo*/
+    --color-sidebar: #1e2a3a;
+    --color-fondo: #f4f6f9;
+    --color-texto: #1f2937;
+    --color-texto-claro: #f1f5f9;
+    --color-azul-interactivo: #2563eb;
+    --color-borde: #e2e8f0;
+
+    /*Radio de prueba, luego vemos si lo cambiamos*/
+    --radio: 8px;
+}
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -10,5 +25,155 @@ ul {
 
 a {
     text-decoration: none;
-    color: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, system-ui, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: var(--color-sidebar);
+    color: var(--color-texto-claro);
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+aside img {
+    width: 40px;
+    height: 40px;
+}
+
+#tituloPagina {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.menu-titulo {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+}
+
+.modulos a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: var(--radio);
+    color: var(--color-texto-claro);
+    transition: background-color 0.15s ease;
+}
+
+.modulos a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header {
+    padding: 16px 24px;
+    background-color: white;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.buscador {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 14px;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    font-size: 0.95rem;
+}
+
+.buscador:focus {
+    outline: none;
+    border-color: var(--color-azul-interactivo);
+}
+
+main {
+    padding: 24px;
+}
+
+.lista-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.categoria-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--color-borde);
+    border-radius: 999px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.categoria-btn:hover {
+    background-color: var(--color-azul-interactivo);
+    color: white;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.producto-card {
+    background-color: white;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 16px;
+    text-align: center;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.producto-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: var(--radio);
+    margin-bottom: 10px;
+}
+
+.producto-card h3 {
+    font-size: 1rem;
+    margin: 4px 0;
+}
+
+.productos-precio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.productos-precio button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-azul-interactivo);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
